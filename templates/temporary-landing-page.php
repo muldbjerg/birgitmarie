@@ -34,7 +34,7 @@
     .index a,
     .index a:visited
     {
-        font-size: max(3vw, 3.75rem);
+        font-size:  clamp(2rem, 5vw, 6rem);
         font-family: system-ui;
         text-decoration: none;
         color: #C88769;
