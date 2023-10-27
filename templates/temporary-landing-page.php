@@ -38,5 +38,10 @@
         font-family: system-ui;
         text-decoration: none;
         color: #C88769;
+        transition: all 0.15s ease-out;
+    }
+
+    .index a:hover{
+        color: #67695E
     }
 </style>
