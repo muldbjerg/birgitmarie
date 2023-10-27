@@ -4,7 +4,10 @@
  * Template Post Type: page
  *
  */
+
+ get_header();
 ?>
+
 
 <div class="index">
 
