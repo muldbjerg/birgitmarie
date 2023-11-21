@@ -60,12 +60,28 @@ a:visited {
     format("woff2");
 }
 
-@font-face {
+/* @font-face {
   font-family: "Bakelony";
   src: url("/wp-content/themes/birgitmarie/assets/fonts/Bakelony.woff2")
     format("woff2");
   font-weight: normal;
   font-style: normal;
+} */
+
+@font-face {
+  font-family: "Bakelony";
+  src: url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.eot");
+  src: url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.eot?#iefix")
+      format("embedded-opentype"),
+    url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.woff2")
+      format("woff2"),
+    url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.woff")
+      format("woff"),
+    url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 * {
