@@ -63,7 +63,7 @@ a:visited {
 @font-face {
   font-family: "bakelony";
   src: url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.woff2")
-    format("bakelony.woff2");
+    format("woff2");
 }
 
 * {
