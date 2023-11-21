@@ -68,20 +68,30 @@ a:visited {
   font-style: normal;
 } */
 
-@font-face {
+/* @font-face {
   font-family: "Bakelony";
-  src: url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.eot");
-  src: url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.eot?#iefix")
+  src: url("/wp-content/themes/birgitmarie/assets/fonts/Bakelony.eot");
+  src: url("/wp-content/themes/birgitmarie/assets/fonts/Bakelony.eot?#iefix")
       format("embedded-opentype"),
-    url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.woff2")
+    url("/wp-content/themes/birgitmarie/assets/fonts/Bakelony.woff2")
       format("woff2"),
-    url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.woff")
+    url("/wp-content/themes/birgitmarie/assets/fonts/Bakelony.woff")
       format("woff"),
-    url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.ttf")
+    url("/wp-content/themes/birgitmarie/assets/fonts/Bakelony.ttf")
       format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+} */
+
+@font-face {
+  font-family: "christmasregular";
+  src: url("/wp-content/themes/birgitmarie/assets/fonts/christmas.dafont-webfont.woff2")
+      format("woff2"),
+    url("/wp-content/themes/birgitmarie/assets/fonts/christmas.dafont-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -93,6 +103,9 @@ a:visited {
   --main-text-color: #20160e;
   --caramel-delight: #845948;
   --forrest-green: #38422a;
+
+  /* --hand-written: "christmasregular", "Bakelony", "Segoe Print", casual, cursive; */
+  --hand-written: "christmasregular", "Segoe Print", casual, cursive;
 
   /* EASES FROM https://gist.github.com/jh3y/1b3afdfa7af3ebc5668bf169cea17d09 */
   --power3-in: linear(
@@ -182,8 +195,8 @@ body::after {
 }
 
 .handwritten {
-  font-family: "Bakelony", "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic,
-    casual, cursive;
+  font-family: var(--hand-written);
+  font-weight: normal;
 }
 
 .notation-box {
@@ -202,8 +215,8 @@ body::after {
 .notation-box p:nth-child(2) {
   border-bottom: 1px solid var(--caramel-delight);
   padding: 2px 20px;
-  font-family: "Bakelony", "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic,
-    casual, cursive;
+  font-family: var(--hand-written);
+  font-weight: normal;
   font-size: 3rem;
   line-height: 0.1;
   margin: 0;
