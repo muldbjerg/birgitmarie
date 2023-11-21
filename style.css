@@ -64,6 +64,14 @@ a:visited {
   font-family: "bakelony";
   src: url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.woff2")
     format("woff2");
+
+  font-family: "Bakelony";
+  src: url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.woff2")
+      format("woff2"),
+    url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
