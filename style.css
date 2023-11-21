@@ -105,7 +105,8 @@ a:visited {
   --forrest-green: #38422a;
 
   /* --hand-written: "christmasregular", "Bakelony", "Segoe Print", casual, cursive; */
-  --hand-written: "christmasregular", "Segoe Print", casual, cursive;
+  --hand-written: "christmasregular", "Christmas", "Segoe Print", casual,
+    cursive;
 
   /* EASES FROM https://gist.github.com/jh3y/1b3afdfa7af3ebc5668bf169cea17d09 */
   --power3-in: linear(
@@ -218,12 +219,12 @@ body::after {
   font-family: var(--hand-written);
   font-weight: normal;
   font-size: 3rem;
-  line-height: 0.1;
+  line-height: 0.2;
   margin: 0;
 }
 
 .notation-box p:nth-child(2) span {
-  transform: rotate(-2deg) translateY(0.08em);
+  transform: rotate(-3deg) translateY(0.03em);
   display: inline-block;
 }
 

@@ -61,4 +61,3 @@
 	</header>
 
 	<div class="site-content">
-		<div class="wrapper">

@@ -12,8 +12,8 @@
             <h2>Replated</h2>
             <p class="replated-tagline handwritten">
                 <span>Tallerkener</span>
-                <span>klar til et</span>
-                <span>nyt liv</span>
+                <span>klar til</span>
+                <span>et nyt liv</span>
             </p>
         </div>
 
@@ -71,9 +71,9 @@
     }
     
     .index-replated .top-content .replated-text-top .replated-tagline{
-        font-size: 6vw;
-        line-height: 0.9;
-        margin: -2.5vw 0 0;
+        font-size: 9vw;
+        line-height: 0.7;
+        margin: -3.5vw 0 0;
         text-align: center;
     }
 
@@ -82,11 +82,11 @@
     }
 
     .index-replated .top-content .replated-tagline span:nth-child(2){
-        margin-left: 8vw;
+        margin-left: 10vw;
     }
 
     .index-replated .top-content .replated-tagline span:nth-child(3){
-        margin-left: 22vw;
+        margin-left: 18vw;
     }
 
     .index-replated .top-content .replated-image-1{

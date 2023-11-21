@@ -37,3 +37,7 @@
         line-height: 1.4;
     }
 </style>
+
+<?php
+    get_footer();
+?>

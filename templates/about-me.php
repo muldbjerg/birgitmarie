@@ -42,10 +42,10 @@
     }
 
     .about-me .text-site h1{
-        transform: translateX(-20px) rotate(-4deg);
+        transform: translateX(-20px) rotate(-5deg);
         font-weight: normal;
         margin-bottom: 50px;
-        font-size: 3.5rem;
+        font-size: 6rem;
     }
 
     .about-me .text-site .about-me-text{
@@ -61,3 +61,8 @@
     }
     
 </style>
+
+
+<?php
+    get_footer();
+?>
