@@ -61,10 +61,6 @@ a:visited {
 }
 
 @font-face {
-  font-family: "bakelony";
-  src: url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.woff2")
-    format("woff2");
-
   font-family: "Bakelony";
   src: url("/wp-content/themes/birgitmarie/assets/fonts/bakelony.woff2")
       format("woff2"),
@@ -172,7 +168,7 @@ body::after {
 }
 
 .handwritten {
-  font-family: "bakelony", "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic,
+  font-family: "Bakelony", "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic,
     casual, cursive;
 }
 
@@ -192,7 +188,7 @@ body::after {
 .notation-box p:nth-child(2) {
   border-bottom: 1px solid var(--caramel-delight);
   padding: 2px 20px;
-  font-family: "bakelony", "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic,
+  font-family: "Bakelony", "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic,
     casual, cursive;
   font-size: 3rem;
   line-height: 0.1;
