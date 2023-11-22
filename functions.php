@@ -7,6 +7,7 @@ function child_deregister_styles_scripts() {
 	wp_dequeue_style( 'cashier-style' );
 	wp_dequeue_style( 'cashier-woocommerce' );
 	wp_dequeue_style( 'wc-blocks-style' );
+	wp_dequeue_style( 'global-styles' );
 	wp_dequeue_script( 'cashier-navigation' );
 }
 

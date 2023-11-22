@@ -40,17 +40,29 @@
         </div>
     </div>
 
-    <!-- <div class="tertiary-content">
-        <div style="padding:56.25% 0 0 0;position:relative;">
-            <img class="poster-image" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/index/replated-video-poster.png'); ?>" alt="">
-            <iframe src="https://player.vimeo.com/video/855685548?h=cef5385160&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" loading="lazy" allowfullscreen></iframe>
-            <script src="https://player.vimeo.com/api/player.js"></script>
+    <div class="tertiary-content">
+        <div class="replated-video-container">
+            <div id="replated-video-poster" class="poster-image">
+                <div class="play-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M72,39.88V216.12a8,8,0,0,0,12.15,6.69l144.08-88.12a7.82,7.82,0,0,0,0-13.38L84.15,33.19A8,8,0,0,0,72,39.88Z"  fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+                </div>
+                <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/index/replated-video-poster.png'); ?>" alt="">
+            </div>
+            <iframe id="replated-video" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
         <script>
+            var replatedVideo = document.getElementById('replated-video'),
+                replatedVideoPoster = document.getElementById('replated-video-poster');
+
+            replatedVideoPoster.addEventListener("click", (e) => {
+                console.log("Hallo");
+                replatedVideo.src = 'https://player.vimeo.com/video/855685548?h=cef5385160&byline=0&portrait=0&autoplay=1';
+                replatedVideoPoster.classList.add('hide')
+            });
 
         </script>
         
-    </div> -->
+    </div>
         
 </div>
 
@@ -128,11 +140,63 @@
     
     .index-replated .tertiary-content{
         padding: 10vw;
-      
     }
 
-    .index-replated .tertiary-content iframe{
-        background:#f60;
+    .index-replated .tertiary-content .replated-video-container{
+        position: relative;
+        padding: 56.25% 0 0 0;
+    }
+
+    .index-replated .tertiary-content #replated-video-poster{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .index-replated .tertiary-content #replated-video-poster .play-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+        width: 180px;
+        height: 120px;
+        border-radius: 30px;
+        right: calc(50% - 90px);
+        top: calc(50% - 60px); 
+        background: rgba(74, 24, 5, 0.7);
+        backdrop-filter: blur(4px);
+
+        transition: all 0.2s ease;
+    }
+
+    .index-replated .tertiary-content #replated-video-poster .play-button svg{
+        height: 60px;
+        color: #fff;
+    }
+
+    @media(hover: hover){
+        .index-replated .tertiary-content #replated-video-poster:hover .play-button{
+            background: transparent;
+            transform: scale(1.1);
+        }
+    }
+
+    .index-replated .tertiary-content #replated-video-poster.hide{
+        opacity: 0;
+        z-index: 0;
+    }
+    
+    .index-replated .tertiary-content #replated-video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
    @media only screen and (max-width: 1040px) {
@@ -140,6 +204,9 @@
            margin-top: 20px;
         }
         
+        .index-replated .tertiary-content{
+            padding: 10vw 0;
+        }
         
     }
     
@@ -188,17 +255,7 @@
 
     }
 
-    @media only screen and (max-width: 600px) {
-        .index-replated .top-content .replated-text-top .replated-tagline{
-            font-size: 18vw;
-            margin: -4vw 0 0;
-        }
-
-         .index-replated .top-content .replated-image-2{
-            margin-top:65vw;
-            width: 100%;
-        }
-    }
+    
 
 
 </style>
