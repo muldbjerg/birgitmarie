@@ -293,6 +293,11 @@ body::after {
     padding-top: 20px;
   }
 
+  .main-header .logo a,
+  .main-header .logo a:visited {
+    font-size: 1.25rem;
+  }
+
   .main-header .main-nav .instagram-icon {
     display: none;
   }
