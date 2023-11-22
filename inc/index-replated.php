@@ -4,7 +4,7 @@
     <div class="top-content">
         
         <div class="replated-image-1">
-            <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/index/replated-index-1.webp' ); ?>" alt="" >
+            <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/index/replated-index-1.webp' ); ?>" alt="Replated tallerkener udstillet" >
         </div>
         
         <div class="replated-text-top">
@@ -20,7 +20,7 @@
         <div class="clearfix"></div>
         
         <div class="replated-image-2">
-            <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/index/replated-index-2.webp' ); ?>" alt="" >
+            <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/index/replated-index-2.webp' ); ?>" alt="Replated tallerkener set oppefra" >
         </div>
     </div>
 
@@ -36,7 +36,7 @@
             </p>
         </div>
         <div>
-            <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/index/replated-index-3.webp' ); ?>" alt="">
+            <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/index/replated-index-3.webp' ); ?>" alt="Hånd der holder Replated tallerkener">
         </div>
     </div>
 
@@ -46,7 +46,8 @@
                 <div class="play-button">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M72,39.88V216.12a8,8,0,0,0,12.15,6.69l144.08-88.12a7.82,7.82,0,0,0,0-13.38L84.15,33.19A8,8,0,0,0,72,39.88Z"  fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
                 </div>
-                <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/index/replated-video-poster.png'); ?>" alt="">
+
+                <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/index/replated-video-poster.webp'); ?>" alt="Vis video om Replated projektet">
             </div>
             <iframe id="replated-video" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -55,7 +56,6 @@
                 replatedVideoPoster = document.getElementById('replated-video-poster');
 
             replatedVideoPoster.addEventListener("click", (e) => {
-                console.log("Hallo");
                 replatedVideo.src = 'https://player.vimeo.com/video/855685548?h=cef5385160&byline=0&portrait=0&autoplay=1';
                 replatedVideoPoster.classList.add('hide')
             });
@@ -207,7 +207,6 @@
         .index-replated .tertiary-content{
             padding: 10vw 0;
         }
-        
     }
     
     @media only screen and (max-width: 960px) {

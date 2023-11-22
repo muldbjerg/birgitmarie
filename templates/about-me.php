@@ -21,7 +21,7 @@
     </div>
     
     <div class="image-site">
-       <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/about-me/about-me.jpg' ); ?>" alt="" >
+       <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/about-me/about-me.jpg' ); ?>" alt="Smilende Birgit Marie stående på marked med Replated tallerkenerne" >
     </div>
 
 </div>
