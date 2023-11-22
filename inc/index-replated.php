@@ -253,9 +253,17 @@
             font-size: 3rem;
         }
 
+        .index-replated .tertiary-content #replated-video-poster .play-button{
+            width: 120px;
+            height: 80px;
+            border-radius: 20px;
+            right: calc(50% - 60px);
+            top: calc(50% - 40px); 
+        }
+
+        .index-replated .tertiary-content #replated-video-poster .play-button svg{
+            height: 40px;
+        }
     }
-
-    
-
 
 </style>
