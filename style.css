@@ -55,8 +55,11 @@ a:visited {
 /* GENEREL */
 
 @font-face {
-  font-family: "Inter";
-  src: url("/wp-content/themes/birgitmarie/assets/fonts/Inter.woff2")
+  font-family: InterVariable;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/wp-content/themes/birgitmarie/assets/fonts/InterVariable.woff2")
     format("woff2");
 }
 
@@ -133,7 +136,7 @@ body {
   min-height: 100%;
   margin: 0;
   background-color: var(--main-background);
-  font-family: "Inter", system-ui, sans-serif;
+  font-family: "InterVariable", system-ui, sans-serif;
   font-weight: normal;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -276,7 +279,6 @@ body::after {
 
 @media (hover: hover) {
   .main-header .main-nav a:hover {
-    /* opacity: 0.7; */
     color: #4a1805;
     color: #3e6984;
   }
