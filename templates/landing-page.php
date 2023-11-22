@@ -32,9 +32,16 @@
     }
 
     .landing-page .hero-text{
-        max-width: 420px;
+        max-width: 540px;
         font-size: 1.6rem;
         line-height: 1.4;
+    }
+    
+    @media only screen and (max-width: 1040px) {
+        .landing-page .hero-text{
+            font-size: 1.3rem;
+        }
+    
     }
 </style>
 

@@ -41,4 +41,17 @@
         font-weight: 700;
         transition: all 0.2s var(--power3-out);
     }
+
+
+
+    @media only screen and (max-width: 960px) {
+        .follow-instagram{
+            padding-top: 40vw;
+        }
+
+        .follow-instagram .text-part{
+            font-size: 6vw;
+        }
+    }
+
 </style>

@@ -45,21 +45,36 @@
         transform: translateX(-20px) rotate(-5deg);
         font-weight: normal;
         margin-bottom: 50px;
-        font-size: 6rem;
+        font-size: 3rem;
+        color: var(--caramel-delight); 
     }
 
     .about-me .text-site .about-me-text{
-        /* max-width: 1200px; */
         font-size: 1.75rem;
-        font-weight: 600;
         line-height: 1.6;
-        color: var(--forrest-green);
     }
     
     .about-me .image-site {
         flex-grow: 4;
     }
     
+    @media only screen and (max-width: 960px) {
+        .about-me { 
+            grid-template-columns: 1fr;
+            
+        }
+
+        .about-me .text-site .about-me-text{
+            font-size: 1.3rem;
+            line-height: 1.6;
+            
+        }
+        
+        .about-me .text-site h1{
+            transform: translateX(0px) rotate(-5deg);
+            text-align: center;
+        }
+    }
 </style>
 
 

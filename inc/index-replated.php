@@ -11,9 +11,9 @@
 
             <h2>Replated</h2>
             <p class="replated-tagline handwritten">
-                <span>Tallerkener</span>
-                <span>klar til</span>
-                <span>et nyt liv</span>
+                <span>Materialer</span>
+                <span>med</span>
+                <span>mening</span>
             </p>
         </div>
 
@@ -28,10 +28,12 @@
         <div class="replated-text">
             <div class="notation-box">
                 <p>Antal Forsøg</p>
-                <p><span>232<span></p>
+                <p><span>302<span></p>
             </div>
         
-            <p>Normalt siges det, at man ikke kan glasere keramik der allerede er brændt. Det tog mange forsøg - men jeg har fundet en måde at give masseproducerede en ny glasur. På den måde de stakke med efterlade hvide tallerkener i genbrugsbutikkerne få nyt liv.</p>
+            <p>Det er normalt besværligt og med meget svingende resultater, at glasere keramik, der allerede er glasurbrændt.</p>
+            <p>Det tog mange forsøg - men jeg har fundet en metode til at give masseproducerede tallerkner en ny glasur. På den måde kan stakkene med de hvide tallerkener i genbrugsbutikkerne få nyt liv. Dette er min måde at bruge ressourcerne på ny og det giver mening.
+            </p>
         </div>
         <div>
             <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/index/replated-index-3.webp' ); ?>" alt="">
@@ -71,9 +73,9 @@
     }
     
     .index-replated .top-content .replated-text-top .replated-tagline{
-        font-size: 9vw;
+        font-size: 7vw;
         line-height: 0.7;
-        margin: -3.5vw 0 0;
+        margin: -2.5vw 0 0;
         text-align: center;
     }
 
@@ -82,22 +84,22 @@
     }
 
     .index-replated .top-content .replated-tagline span:nth-child(2){
-        margin-left: 10vw;
+        margin-left: 20vw;
     }
 
     .index-replated .top-content .replated-tagline span:nth-child(3){
-        margin-left: 18vw;
+        margin-left: 22vw;
     }
 
     .index-replated .top-content .replated-image-1{
         width: 32vw;
         float:right;
-        margin-top: -220px;
+        margin-top: -240px;
     }
     
     .index-replated .top-content .replated-image-2{
         width: 45vw;
-        margin-top: -130px;
+        margin-top: -60px;
     }
 
     .index-replated .secondary-content {
@@ -121,7 +123,7 @@
     .index-replated .secondary-content .replated-text .notation-box p:nth-child(2){
         max-width: 140px;
         padding-top: 16px;
-        font-size: 3.2rem;
+        font-size: 4rem;
     }
     
     .index-replated .tertiary-content{
@@ -133,18 +135,70 @@
         background:#f60;
     }
 
-    /* .index-replated .tertiary-content img.poster-image{
-        background-size: cover;
-        bottom: 0;
-        left: 0;
-        opacity: 1.0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 10;
-        height: 100%;
-        width: 100%;
-        transition: all 0.3s ease-in;
-        opacity: 0.3;
-    } */
+   @media only screen and (max-width: 1040px) {
+       .index-replated .top-content .replated-image-2{
+           margin-top: 20px;
+        }
+        
+        
+    }
+    
+    @media only screen and (max-width: 960px) {
+        .index-replated .top-content {
+            padding-top: 40px;
+        }
+
+        .index-replated .top-content .replated-image-1{
+            display: none;
+        }
+
+         .index-replated .secondary-content .replated-text{ 
+            max-width: 400px;
+            padding-bottom: 2vw;
+        }
+
+         .index-replated .top-content .replated-text-top h2{
+            font-size: 14vw;
+        }
+        
+        .index-replated .top-content .replated-text-top .replated-tagline{
+            font-size: 12vw;
+            margin: -4vw 0 0;
+        }
+
+        .index-replated .top-content .replated-tagline span:nth-child(2) {
+            margin-left: 8vw;
+            transform: translateY(5px);
+        }
+
+        .index-replated .top-content .replated-image-2{
+            margin-top: 52vw;
+            width: 100%;
+        }
+
+        .index-replated .secondary-content{
+            grid-template-columns: 1fr; 
+            margin-top: 20vw;
+            gap: 20vw;
+        }
+
+        .index-replated .secondary-content .replated-text .notation-box p:nth-child(2){
+            font-size: 3rem;
+        }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        .index-replated .top-content .replated-text-top .replated-tagline{
+            font-size: 18vw;
+            margin: -4vw 0 0;
+        }
+
+         .index-replated .top-content .replated-image-2{
+            margin-top:65vw;
+            width: 100%;
+        }
+    }
+
+
 </style>
